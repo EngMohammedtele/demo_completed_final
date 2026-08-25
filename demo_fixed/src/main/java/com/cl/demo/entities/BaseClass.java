@@ -8,3 +8,6 @@ import java.util.UUID;
 
 @Getter
 @Setter
+public class BaseClass {
+
+    private UUID id;
