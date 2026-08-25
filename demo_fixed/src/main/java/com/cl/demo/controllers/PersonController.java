@@ -15,3 +15,8 @@ import java.util.Map;
 
 @RestController
 @RequestMapping("person")
+public class PersonController {
+
+    @Autowired
+    public PersonService personService;
+
