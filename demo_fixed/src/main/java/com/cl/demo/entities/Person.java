@@ -11,3 +11,7 @@ public class Person extends BaseClass {
     private String name;
     private UserName userName;
     private String email;
+    private PhoneNumber phoneNumber;
+    private List<Task> tasks;
+
+}
