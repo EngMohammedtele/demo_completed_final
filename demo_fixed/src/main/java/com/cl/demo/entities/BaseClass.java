@@ -13,3 +13,5 @@ public class BaseClass {
     private UUID id;
     private Boolean isActive;
     private Date createdDate;
+    private Date updatedDate;
+}
