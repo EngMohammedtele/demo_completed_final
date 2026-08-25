@@ -10,3 +10,4 @@ import java.util.Date;
 public class Task extends BaseClass {
     private String title;
     private String description;
+    private String taskNumber;
