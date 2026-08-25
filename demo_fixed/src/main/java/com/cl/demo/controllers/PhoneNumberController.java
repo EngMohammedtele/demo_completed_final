@@ -25,3 +25,6 @@ public class PhoneNumberController {
     @GetMapping("getAll")
     public List<PhoneNumberCreateResponse> getAll() { return PhoneNumberCreateResponse.convert(phoneNumberService.getAllPhoneNumbers()); }
 
+    @PutMapping("update")
+    public PhoneNumberUpdateResponse update(@RequestBody PhoneNumberUpdateRequest request) { return PhoneNumberUpdateResponse.convert(phoneNumberService.updatePhoneNumber(request)); }
+
