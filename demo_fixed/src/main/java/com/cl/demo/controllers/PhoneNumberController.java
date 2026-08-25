@@ -18,3 +18,7 @@ public class PhoneNumberController {
 
     @PostMapping("add")
     public PhoneNumberCreateResponse add(@RequestBody PhoneNumberCreateRequest request) { return PhoneNumberCreateResponse.convert(phoneNumberService.addPhoneNumber(request)); }
+
+    @GetMapping("getById")
+    public PhoneNumberCreateResponse getById(@RequestParam String uuid) { return PhoneNumberCreateResponse.convert(phoneNumberService.getPhoneNumberById(uuid)); }
+
