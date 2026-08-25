@@ -20,3 +20,10 @@ public class PersonController {
     @Autowired
     public PersonService personService;
 
+    @PostMapping("add")
+    public Map<String, String> addPerson(@RequestBody PersonCreateRequest person) {
+        return personService.addPerson(person);
+    }
+
+
+}
