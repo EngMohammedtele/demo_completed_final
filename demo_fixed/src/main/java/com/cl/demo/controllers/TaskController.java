@@ -25,3 +25,6 @@ public class TaskController {
 
     @GetMapping("getAll")
     public List<TaskCreateResponse> getAllTasks() { return TaskCreateResponse.convert(taskService.getAllTasks()); }
+
+    @PutMapping("update")
+    public TaskUpdateResponse updateTask(@RequestBody TaskUpdateRequest request) { return TaskUpdateResponse.convert(taskService.updateTask(request)); }
