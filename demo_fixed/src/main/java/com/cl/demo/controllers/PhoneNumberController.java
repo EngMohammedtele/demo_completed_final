@@ -16,3 +16,5 @@ public class PhoneNumberController {
     @Autowired
     private PhoneNumberService phoneNumberService;
 
+    @PostMapping("add")
+    public PhoneNumberCreateResponse add(@RequestBody PhoneNumberCreateRequest request) { return PhoneNumberCreateResponse.convert(phoneNumberService.addPhoneNumber(request)); }
