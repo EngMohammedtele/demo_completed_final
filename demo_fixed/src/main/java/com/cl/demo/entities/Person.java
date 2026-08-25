@@ -9,3 +9,4 @@ import java.util.List;
 @Getter
 public class Person extends BaseClass {
     private String name;
+    private UserName userName;
