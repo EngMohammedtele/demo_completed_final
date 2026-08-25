@@ -14,3 +14,5 @@ import java.util.Map;
 @RestController
 @RequestMapping("task")
 public class TaskController {
+    @Autowired
+    private TaskService taskService;
