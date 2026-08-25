@@ -11,3 +11,4 @@ public class Task extends BaseClass {
     private String title;
     private String description;
     private String taskNumber;
+    private Date dueDate;
