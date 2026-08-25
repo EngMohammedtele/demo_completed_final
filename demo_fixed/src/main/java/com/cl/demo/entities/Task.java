@@ -9,3 +9,4 @@ import java.util.Date;
 @Getter
 public class Task extends BaseClass {
     private String title;
+    private String description;
