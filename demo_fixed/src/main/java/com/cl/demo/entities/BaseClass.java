@@ -11,3 +11,4 @@ import java.util.UUID;
 public class BaseClass {
 
     private UUID id;
+    private Boolean isActive;
