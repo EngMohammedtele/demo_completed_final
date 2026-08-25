@@ -14,3 +14,4 @@ public class Task extends BaseClass {
     private Date dueDate;
     private Date startDate;
     private Date endDate;
+    private TaskStatus taskStatus;
