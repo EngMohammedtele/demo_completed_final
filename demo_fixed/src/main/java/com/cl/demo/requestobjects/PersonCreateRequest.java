@@ -10,3 +10,4 @@ public class PersonCreateRequest {
 
     private String personFirstName;
     private String personLastName;
+    private String personMiddleName;
