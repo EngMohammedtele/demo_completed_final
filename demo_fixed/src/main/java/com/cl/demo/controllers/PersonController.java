@@ -25,5 +25,9 @@ public class PersonController {
         return personService.addPerson(person);
     }
 
+    @GetMapping("getById")
+    public PersonCreateResponse getPersonById(@RequestParam String uuid) {
 
-}
+        return PersonCreateResponse.convert(personService.getPersonById(uuid));
+    }
+
