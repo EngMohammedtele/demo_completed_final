@@ -20,3 +20,7 @@ public class TaskController {
     @PostMapping("add")
     public Map<String, String> addTask(@RequestBody TaskCreateRequest request) { return taskService.addTask(request); }
 
+    @GetMapping("getById")
+    public TaskCreateResponse getTaskById(@RequestParam String uuid) { return TaskCreateResponse.convert(taskService.getTaskById(uuid)); }
+
+
