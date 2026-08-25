@@ -16,3 +16,7 @@ import java.util.Map;
 public class TaskController {
     @Autowired
     private TaskService taskService;
+
+    @PostMapping("add")
+    public Map<String, String> addTask(@RequestBody TaskCreateRequest request) { return taskService.addTask(request); }
+
