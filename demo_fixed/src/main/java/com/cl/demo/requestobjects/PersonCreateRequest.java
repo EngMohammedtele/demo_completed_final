@@ -8,3 +8,4 @@ import lombok.Setter;
 @Setter
 public class PersonCreateRequest {
 
+    private String personFirstName;
