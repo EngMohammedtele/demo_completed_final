@@ -9,3 +9,4 @@ import lombok.Setter;
 public class PersonCreateRequest {
 
     private String personFirstName;
+    private String personLastName;
