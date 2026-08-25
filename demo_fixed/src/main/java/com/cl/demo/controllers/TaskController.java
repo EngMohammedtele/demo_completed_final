@@ -28,3 +28,7 @@ public class TaskController {
 
     @PutMapping("update")
     public TaskUpdateResponse updateTask(@RequestBody TaskUpdateRequest request) { return TaskUpdateResponse.convert(taskService.updateTask(request)); }
+
+    @DeleteMapping("deleteById")
+    public Boolean deleteTaskById(@RequestParam String id) { return taskService.deleteById(id); }
+}
