@@ -6,3 +6,4 @@ import lombok.Setter;
 @Getter
 @Setter
 public class PersonUpdateRequest {
+    private String uuid;
