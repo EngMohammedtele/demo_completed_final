@@ -28,3 +28,6 @@ public class PhoneNumberController {
     @PutMapping("update")
     public PhoneNumberUpdateResponse update(@RequestBody PhoneNumberUpdateRequest request) { return PhoneNumberUpdateResponse.convert(phoneNumberService.updatePhoneNumber(request)); }
 
+    @DeleteMapping("deleteById")
+    public Boolean deleteById(@RequestParam String id) { return phoneNumberService.deleteById(id); }
+}
