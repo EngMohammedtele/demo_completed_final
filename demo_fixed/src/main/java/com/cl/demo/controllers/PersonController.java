@@ -31,3 +31,8 @@ public class PersonController {
         return PersonCreateResponse.convert(personService.getPersonById(uuid));
     }
 
+    @GetMapping("getAll")
+    public List<PersonCreateResponse> getAllPerson() {
+        return PersonCreateResponse.convert(personService.getAllPersons());
+    }
+
