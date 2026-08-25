@@ -12,3 +12,7 @@ import java.util.List;
 
 @RestController
 @RequestMapping("phoneNumber")
+public class PhoneNumberController {
+    @Autowired
+    private PhoneNumberService phoneNumberService;
+
