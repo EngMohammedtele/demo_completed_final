@@ -13,3 +13,4 @@ public class PersonCreateRequest {
     private String personMiddleName;
     private String personUserName;
     private String personEmail;
+    private String personCountryCode;
