@@ -14,3 +14,5 @@ public class PersonCreateRequest {
     private String personUserName;
     private String personEmail;
     private String personCountryCode;
+    private Long personPhoneNumber;
+}
