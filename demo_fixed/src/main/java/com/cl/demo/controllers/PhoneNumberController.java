@@ -22,3 +22,6 @@ public class PhoneNumberController {
     @GetMapping("getById")
     public PhoneNumberCreateResponse getById(@RequestParam String uuid) { return PhoneNumberCreateResponse.convert(phoneNumberService.getPhoneNumberById(uuid)); }
 
+    @GetMapping("getAll")
+    public List<PhoneNumberCreateResponse> getAll() { return PhoneNumberCreateResponse.convert(phoneNumberService.getAllPhoneNumbers()); }
+
